@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compra Aprovada | Voia Agency</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f2f4f6;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .email-wrapper {
+      width: 100%;
+      max-width: 720px;
+      padding: 0;
+    }
+
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .header {
+      background: linear-gradient(90deg, #162c2c 0%, #1e7d55 100%);
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 34px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section {
+      padding: 48px 40px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .section p {
+      font-size: 16px;
+      color: #555;
+      margin: 16px 0;
+    }
+
+    .card-line, .impact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .card-line .card, .impact-cards .card {
+      flex: 1 1 30%;
+      min-width: 180px;
+      background: #f9fafb;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .card-line .card strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1e7d55;
+    }
+
+    .card-line .card span,
+    .impact-cards .card span {
+      color: #666;
+      font-size: 13px;
+      margin-top: 8px;
+      display: block;
+    }
+
+    .impact-cards .card strong {
+      display: block;
+      font-size: 30px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta a {
+      background: #1e7d55;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .cta a:hover {
+      background: #145f40;
+    }
+
+    .special-offer {
+      background: #eefaf5;
+      border-left: 5px solid #1e7d55;
+      padding: 24px;
+      margin-top: 40px;
+      font-size: 15px;
+      color: #1a3c2f;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 18px;
+      color: #1e7d55;
+      margin: 40px 0;
+    }
+
+    .footer {
+      background: #f8f9fa;
+      color: #444;
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 14px;
+      border-top: 1px solid #eaeaea;
+    }
+
+    .footer strong {
+      color: #1e7d55;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .footer a {
+      color: #1e7d55;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .contact-info {
+      margin: 16px 0;
+    }
+
+    .contact-info div {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 768px) {
+      .card-line .card, .impact-cards .card {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .cta a {
+        width: 100%;
+        max-width: 280px;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="container">
+      <div class="header">
+        <h1>✅ COMPRA APROVADA</h1>
+      </div>
+
+      <img src="https://img.freepik.com/free-photo/business-people-shaking-hands-together_53876-13391.jpg" alt="Empresário satisfeito com crescimento" class="hero-image" />
+
+      <div class="section">
+        <h2>Compra aprovada no valor de:<br><span style="color:#1e7d55; font-size: 24px;">R$ XX.XXX,XX</span></h2>
+
+        <p><em>É essa a mensagem que seus concorrentes estão recebendo enquanto seu negócio está estagnado?</em></p>
+
+        <div class="card-line">
+          <div class="card">
+            <strong>⬆ Vendas</strong>
+            <span>Aumentando com estratégia</span>
+          </div>
+          <div class="card">
+            <strong>⬆ Clientes</strong>
+            <span>Conquistando mercado</span>
+          </div>
+          <div class="card">
+            <strong>⬆ Receita</strong>
+            <span>Crescendo todo mês</span>
+          </div>
+        </div>
+
+        <p><strong>Seus concorrentes não estão esperando.</strong><br> Cada dia sem estratégia é vantagem para eles.</p>
+
+        <p>A diferença entre quem cresce e quem não cresce é <strong>estratégia, execução e tecnologia</strong>.</p>
+
+        <div class="quote">"O sucesso é a soma de pequenos esforços repetidos dia após dia."</div>
+
+        <h2>Hora de virar o jogo</h2>
+
+        <div class="impact-cards">
+          <div class="card">
+            <strong>+%</strong>
+            <span>Aumento no faturamento</span>
+          </div>
+          <div class="card">
+            <strong>45 à 90</strong>
+            <span>Dias para resultados</span>
+          </div>
+          <div class="card">
+            <strong>500+</strong>
+            <span>Empresas transformadas</span>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a href="https://wa.me/5512988083842" target="_blank">🎯 QUERO SUPERAR MINHA CONCORRÊNCIA</a>
+        </div>
+
+        <div class="special-offer">
+          <p><strong>Consultoria gratuita:</strong> Fale com a Voia Agency e receba uma análise completa do seu mercado e estratégias personalizadas.</p>
+        </div>
+
+        <p><strong>SE VOCÊ NÃO ESTÁ DISPOSTO A ARRISCAR, ESTEJA DISPOSTO A UMA VIDA COMUM!</strong></p>
+      </div>
+
+      <div class="footer">
+        <p><strong>Voia Agency</strong> – Onde o querer é o ponto de partida.</p>
+        <p>Rua Síria, 71 – São José dos Campos/SP</p>
+        <div class="contact-info">
+          <div>📧 contato@voiaagency.com.br</div>
+          <div>📞 (12) 99781-9311</div>
+          <div>🌐 www.voiaagency.com.br</div>
+        </div>
+        <p>
+          <a href="#">Descadastrar</a> |
+          <a href="#">Política de Privacidade</a> |
+          <a href="#">Termos de Uso</a>
+        </p>
+        <p style="margin-top: 20px; color: #888; font-size: 12px;">© 2025 Voia Agency. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
