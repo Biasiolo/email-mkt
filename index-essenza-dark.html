@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mantikids - Espaço Essenza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand-600:#2E7D32;
+      --brand-500:#4CAF50;
+      --brand-400:#81C784;
+      --brand-50:#F1F8E9;
+      --accent-500:#FFB300;
+      --ink-900:#1B1B1B;
+      --ink-700:#444;
+      --ink-500:#666;
+      --bg-hero-1:#66BB6A;
+      --bg-hero-2:#43A047;
+      --radius-xl:24px;
+      --radius-lg:18px;
+      --radius-md:14px;
+      --shadow-lg:0 18px 48px rgba(0,0,0,.14);
+      --shadow-sm:0 6px 18px rgba(0,0,0,.08);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:0; min-height:100vh;
+      font-family:'Inter','Segoe UI',sans-serif; line-height:1.6; color:var(--ink-700);
+      background:linear-gradient(135deg,#8edee0 0%, #8eb4d8 100%);
+    }
+
+    .main{ max-width:680px; margin:24px auto; background:#fff; border-radius:var(--radius-xl); overflow:hidden; box-shadow:var(--shadow-lg); }
+    .header{ background:linear-gradient(135deg, var(--bg-hero-1) 0%, var(--bg-hero-2) 100%); padding:28px 24px 32px; text-align:center; color:#fff; }
+    .logo{margin-bottom:16px}
+    .logo img{width:150px; height:auto; filter:drop-shadow(0 4px 8px rgba(0,0,0,.15))}
+    .badge{ display:inline-block; background:rgba(255,255,255,.95); color:var(--brand-600); padding:10px 18px; border-radius:999px; font:600 13px/1 'Fredoka',sans-serif; letter-spacing:.6px; text-transform:uppercase; box-shadow:var(--shadow-sm); margin-bottom:16px; }
+    h1{ margin:0; color:#fff; font-family:'Fredoka',sans-serif; font-weight:700; font-size:32px; line-height:1.2; text-shadow:0 2px 8px rgba(0,0,0,.12); }
+
+    .content{padding:40px 32px}
+    .hero-image{ text-align:center; margin:24px 0 32px}
+    .hero-image img{ width:100%; max-width:420px; border-radius:var(--radius-lg); box-shadow:none }
+
+    h2.sub-title{ font-family:'Fredoka',sans-serif; font-size:48px; font-weight:700; color:var(--brand-600); text-align:center; margin:0 0 16px; }
+
+    .intro-text{ font-size:18px; text-align:center; color:var(--ink-900); margin:0 0 24px }
+
+    .highlight{ background:var(--brand-50); border:1.5px solid var(--brand-400); color:var(--brand-600); padding:18px 20px; border-radius:var(--radius-lg); text-align:center; box-shadow:var(--shadow-sm); margin:24px 0 28px; font-weight:600; }
+
+    .features{ padding:8px 0 0; margin:8px 0 24px }
+    .features h2{ font-family:'Fredoka',sans-serif; color:var(--brand-600); font-weight:700; font-size:24px; text-align:center; margin:0 0 16px; }
+    .divider{ width:72px; height:4px; background:linear-gradient(90deg,var(--brand-500),var(--accent-500)); border-radius:3px; margin:10px auto 0 }
+    .feature-grid{ display:grid; gap:16px; grid-template-columns:repeat(2,1fr); margin:20px 0 0 }
+    .feature-item{ border:1px solid #eef2ee; border-radius:var(--radius-md); padding:18px; text-align:center; box-shadow:var(--shadow-sm); background:#fff; }
+    .emoji{font-size:28px; display:block; margin-bottom:8px}
+    .feature-text{ font-size:15px; color:var(--ink-700); font-weight:600 }
+
+    .cta-wrap{ text-align:center; margin:34px 0 }
+    .cta{ display:inline-block; background:linear-gradient(135deg,var(--brand-500), var(--brand-600)); color:#fff; text-decoration:none; padding:22px 38px; border-radius:999px; font:700 20px/1 'Fredoka',sans-serif; letter-spacing:.4px; box-shadow:0 12px 28px rgba(76,175,80,.35); }
+    .cta:focus, .cta:hover{ filter:brightness(1.05)}
+    .urgency{ background: linear-gradient(135deg, #FFF3CD 0%, #FFE8A1 100%); border:1px solid #FFE082; color:#7A4C00; border-radius:var(--radius-md); padding:14px 16px; text-align:center; font-weight:700; margin:14px 0 0; }
+
+    .footer{ background:#0f2320; color:#cfe3db; text-align:center; padding:24px 20px; border-top:4px solid var(--brand-600); }
+    .footer p{ margin:6px 0; font-size:14px }
+    .footer a{ color:#8BE0A1; text-decoration:none }
+    .social{ margin:14px 0 }
+    .social a{ display:inline-block; margin:0 6px; width:36px; height:36px; line-height:36px; text-align:center; border-radius:50%; background:rgba(255,255,255,.08); color:#e7fff1 }
+
+    @media (max-width:600px){
+      .main{ margin:12px; border-radius:20px }
+      h1{ font-size:26px }
+      .content{ padding:28px 22px }
+      .feature-grid{ grid-template-columns:1fr }
+      .hero-image img{ max-width:360px }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="logo">
+        <img src="https://vinicolaessenza.com.br/wp-content/uploads/2025/08/prancheta_5_1.webp" alt="Logo Espaço Essenza" />
+      </div>
+      <div class="badge">Novidade Mantikids</div>
+      <h1>Uma aventura mágica na Serra da Mantiqueira!</h1>
+    </div>
+
+    <div class="content">
+      <div class="hero-image">
+        <img src="https://vinicolaessenza.com.br/wp-content/uploads/2025/08/personagem.webp" alt="Personagens do Mantikids em cenário da Mantiqueira" />
+      </div>
+
+      <h2 class="sub-title">Você sabia?</h2>
+      <p class="intro-text">O azeite extravirgem é cheio de benefícios para as crianças – ajuda no desenvolvimento, fortalece a saúde e ainda desperta o paladar para sabores mais naturais.</p>
+
+      <div class="highlight">No <strong>Mantikids</strong>, unimos diversão e aprendizado em um ambiente seguro: trilhas, oficinas e atividades criativas que despertam a curiosidade dos pequenos enquanto os pais aproveitam o melhor da Essenza.</div>
+
+      <section class="features" aria-labelledby="recursos">
+        <h2 id="recursos">O que aguarda seu pequeno explorador</h2>
+        <div class="divider"></div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="emoji">🌿</span>
+            <div class="feature-text">Trilha educativa com descobertas da fauna e flora</div>
+          </div>
+          <div class="feature-item">
+            <span class="emoji">🥪</span>
+            <div class="feature-text">Oficina de mini piquenique e degustação especial</div>
+          </div>
+          <div class="feature-item">
+            <span class="emoji">🎨</span>
+            <div class="feature-text">Atividades artísticas inspiradas na Mantiqueira</div>
+          </div>
+          <div class="feature-item">
+            <span class="emoji">🎒</span>
+            <div class="feature-text">Kit exclusivo do pequeno explorador</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-wrap">
+        <a class="cta" href="https://wa.me/5512996873643?text=Quero%20garantir%20a%20vaga%20no%20Mantikids" target="_blank" rel="noopener">Garantir vaga agora</a>
+        <div class="urgency">⚡ Vagas limitadas para garantir experiência exclusiva e segura!</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo">
+        <img src="https://vinicolaessenza.com.br/wp-content/uploads/2025/08/prancheta_5_1.webp" alt="Logo Espaço Essenza" />
+      </div>
+      <p>📍 <strong>Santo Antônio do Pinhal</strong> – Serra da Mantiqueira</p>
+      <p>📞 (12) 99687-3643</p>
+      <p><a href="https://vinicolaessenza.com.br" target="_blank" rel="noopener">vinicolaessenza.com.br</a></p>
+      <div class="social">
+        <a href="#">📘</a>
+        <a href="#">📷</a>
+        <a href="#">💬</a>
+      </div>
+      <p style="font-size:12px; opacity:.9; margin-top:10px">
+        <a href="#" style="color:#a3f3bb">Descadastrar</a> ·
+        <a href="#" style="color:#a3f3bb">Política de Privacidade</a>
+      </p>
+      <p style="font-size:12px; opacity:.85; margin-top:6px">© 2025 Vinícola Essenza. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
